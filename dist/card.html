@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <title>Document</title>
+</head>
+<body>
+    <div class="cards">
+      <div class="bottom-nav">
+        <div>
+          <a href="index.html"><i class="fas fa-home  fa-2x"></i></a>
+          <p>Home</p>
+        </div>
+        <div>
+          <a href="payment.html"><i class="fas fa-paper-plane fa-2x"></i></a>
+          <p>Payments</p>
+        </div>
+        <div>
+          <a href="budget.html"><i class="fas fa-chart-pie fa-2x"></i></a>
+          <p>Budget</p>
+        </div>
+        <div>
+          <a href="card.html"><i class="fas fa-credit-card fa-2x"></i></a>
+          <p>Cards</p>
+        </div>
+        <div>
+          <a href="more.html"><i class="fas fa-list-ul fa-2x"></i></a>
+          <p>More</p>
+        </div>
+      </div>
+      <div class="card-box">
+        <div class="header">
+          <h3>Card</h3>
+        </div>
+        <div class="card1">
+          <img src="./img/kudCard.jfif" alt="">
+          <button class="card1Button">Show Details</button>
+        </div>
+        <div class="card2">
+          <div class="card-flex">
+            <img src="./img/kudCard.jfif" alt="">
+            <div class="txt">
+              <span class="txt-bot">
+                <span class="text-s">
+                  <h3>Card Number</h3>
+                  <i class="fas fa-copy" onclick="copyCardNumber()"></i>
+                </span>
+                <input type="text" class="cardNo" value="4105 4000 2343 4515" readonly>
+              </span>
+              <span class="txt-bot">
+                <span class="text-s">
+                  <h3>Expiry Date</h3>
+                  <i class="fas fa-copy" onclick="copyExpiryDate()"></i>
+                </span>
+                <input type="text" class="expiryNo" value="08/26" readonly>
+              </span>
+              <span class="txt-bot">
+                <span class="text-s">
+                  <h3>CVV</h3>
+                  <i class="fas fa-copy" onclick="copyCvv()"></i>
+                </span>
+                <input type="text" class="cvvNo" value="678" readonly>
+              </span>
+            </div>
+          </div>
+          <button class="card2Button">Hide Details</button>
+        </div>
+      </div>
+      <div class="ind-payment">
+        <div class="each-payment">
+          <i class="fas fa-book s-icon"></i>
+          <a href="#">
+            <h3>Block card</h3>
+            <p>Temporarily disable this card</p>
+          </a>
+          <i class="fas fa-angle-right fa-2x"></i>
+        </div>
+        <div class="each-payment">
+          <i class="fas fa-cog s-icon"></i>
+          <a href="#">
+            <h3>Manage Card</h3>
+            <p>Set limits and manage channels</p>
+          </a>
+          <i class="fas fa-angle-right fa-2x"></i>
+        </div>
+       </div>
+       <div class=" msg">
+       </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "kuda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://raymond-techy.github.io/kuda-clone",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
